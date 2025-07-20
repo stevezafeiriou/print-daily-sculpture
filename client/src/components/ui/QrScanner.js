@@ -1,4 +1,3 @@
-// src/components/ui/QrScanner.js
 import React, { useEffect, useRef } from "react";
 import { Html5Qrcode } from "html5-qrcode";
 import styled from "styled-components";

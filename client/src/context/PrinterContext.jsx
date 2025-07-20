@@ -1,4 +1,3 @@
-// src/context/PrinterContext.jsx
 import React, { createContext, useContext, useState, useEffect } from "react";
 import {
 	getPrinterSettings,

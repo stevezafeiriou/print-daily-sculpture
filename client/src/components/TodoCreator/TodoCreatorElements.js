@@ -1,4 +1,3 @@
-// src/components/TodoCreator/TodoCreatorElements.js
 import styled from "styled-components";
 
 export const CreatorCard = styled.div`

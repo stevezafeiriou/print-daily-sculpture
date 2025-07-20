@@ -1,4 +1,3 @@
-// src/components/TodoFeed/TodoFeedElements.js
 import styled from "styled-components";
 
 export const FeedWrapper = styled.div`

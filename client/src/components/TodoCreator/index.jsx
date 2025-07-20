@@ -1,4 +1,3 @@
-// src/components/TodoCreator/index.jsx
 import React, { useState, useRef } from "react";
 import {
 	CreatorCard,

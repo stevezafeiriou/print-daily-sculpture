@@ -1,5 +1,3 @@
-// src/utils/printerStorage.js
-
 const STORAGE_KEY = "printerSettings";
 
 export const getPrinterSettings = () => {

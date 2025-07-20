@@ -1,4 +1,3 @@
-// src/components/TodoFeed/index.jsx
 import React from "react";
 import { useTodos } from "../../context/TodoContext";
 import {
@@ -56,9 +55,10 @@ export default function TodoFeed({
 		toast.promise(
 			new Promise((resolve) => {
 				setTimeout(() => {
+					// Simulate API remove - replace with actual API call
 					removeTodo(id);
 					resolve();
-				}, 300); // simulating delay
+				}, 300);
 			}),
 			{
 				pending: "Removing TODO...",

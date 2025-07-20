@@ -1,4 +1,3 @@
-// src/pages/Settings.jsx
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import SidebarLayout from "../components/Sidebar";
@@ -86,9 +85,9 @@ export default function Settings() {
 		toast.promise(
 			new Promise((resolve) => {
 				setTimeout(() => {
-					// Simulate API save
+					// Simulate API save - replace with actual API call
 					updateSettings({ serial: printerSerial, name: printerName });
-					resolve(); // In real case, resolve() would be called when the fetch/axios finishes
+					resolve();
 				}, 1000);
 			}),
 			{

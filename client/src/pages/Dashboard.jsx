@@ -1,11 +1,10 @@
-// src/pages/Dashboard.jsx
 import React, { useState } from "react";
 import TodoCreator from "../components/TodoCreator";
 import SearchFilters from "../components/SearchFilters";
 import TodoFeed from "../components/TodoFeed";
 import SidebarLayout from "../components/Sidebar";
 import styled from "styled-components";
-import { useTodos } from "../context/TodoContext"; // ⬅️ make sure this is imported
+import { useTodos } from "../context/TodoContext";
 
 const PageContent = styled.div`
 	width: 100%;
@@ -35,12 +34,12 @@ export default function Dashboard() {
 					onSearchChange={setSearch}
 					selectedCategory={category}
 					onCategoryChange={setCategory}
-					categories={categories} // ✅ pass here
+					categories={categories}
 				/>
 				<TodoFeed
 					searchQuery={search}
 					selectedCategory={category}
-					selectedDate={undefined} // ⬅️ calendar removed for now
+					selectedDate={undefined}
 				/>
 			</PageContent>
 		</SidebarLayout>

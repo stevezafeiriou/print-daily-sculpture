@@ -13,7 +13,10 @@ const PageContent = styled.div`
 	max-width: 700px;
 	display: flex;
 	flex-direction: column;
-	gap: 2rem;
+	gap: 1.5rem;
+	h2 {
+		margin-left: 1rem;
+	}
 `;
 
 const Section = styled.div`
@@ -111,7 +114,7 @@ export default function Settings() {
 	return (
 		<SidebarLayout>
 			<PageContent>
-				<h2>ESP32 Printer Settings</h2>
+				<h2>Printer Settings</h2>
 
 				<Section>
 					<div>

@@ -11,10 +11,11 @@ export const PageWrapper = styled.div`
 export const ContentWrapper = styled.div`
 	flex: 1;
 	padding: 2rem;
+	margin-left: 1rem;
 	display: flex;
 	justify-content: center;
 
-	@media (max-width: 768px) {
+	@media (max-width: 1180px) {
 		padding: 1rem;
 	}
 `;
@@ -40,7 +41,7 @@ export const SidebarWrapper = styled.nav`
 	transition: transform 0.3s ease-in-out;
 	z-index: 1000;
 
-	@media (max-width: 768px) {
+	@media (max-width: 1180px) {
 		transform: ${({ open }) => (open ? "translateX(0)" : "translateX(-100%)")};
 	}
 `;
@@ -58,7 +59,7 @@ export const ToggleButton = styled.button`
 	border: none;
 	cursor: pointer;
 
-	@media (min-width: 769px) {
+	@media (min-width: 1180px) {
 		display: none;
 	}
 `;
@@ -70,7 +71,7 @@ export const Overlay = styled.div`
 	background: rgba(0, 0, 0, 0.2);
 	z-index: 999;
 
-	@media (min-width: 769px) {
+	@media (min-width: 1180px) {
 		display: none;
 	}
 `;
@@ -79,22 +80,6 @@ export const NavList = styled.ul`
 	list-style: none;
 	padding: 0;
 	margin: 0;
-
-	.box {
-		width: 50px;
-		height: 50px;
-		background-color: #1b1d1c;
-		border-radius: 8px;
-		margin: 1rem 0.75rem;
-	}
-
-	@media screen and (max-width: 768px) {
-		.box {
-			width: 40px;
-			height: 40px;
-			margin: 2rem 0.75rem;
-		}
-	}
 `;
 
 export const LogoImage = styled.img`
@@ -102,12 +87,12 @@ export const LogoImage = styled.img`
 	height: 50px;
 	background-color: #1b1d1c;
 	border-radius: 8px;
-	margin: 1rem 0.75rem;
+	margin: 1.5rem 0.5rem;
 
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 1180px) {
 		width: 40px;
 		height: 40px;
-		margin: 2rem 0.75rem;
+		margin: 1.5rem 0.35rem;
 	}
 `;
 

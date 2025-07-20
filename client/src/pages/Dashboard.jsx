@@ -12,6 +12,9 @@ const PageContent = styled.div`
 	display: flex;
 	flex-direction: column;
 	gap: 1.5rem;
+	h2 {
+		margin-left: 1rem;
+	}
 `;
 
 export default function Dashboard() {
@@ -28,6 +31,7 @@ export default function Dashboard() {
 	return (
 		<SidebarLayout>
 			<PageContent>
+				<h2>Dashboard</h2>
 				<TodoCreator />
 				<SearchFilters
 					searchQuery={search}
